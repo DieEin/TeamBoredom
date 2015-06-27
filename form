@@ -1,0 +1,32 @@
+<form action="questionupload.php">
+
+Here you can write your questons.<br>
+
+<textarea rows="10" cols="50" name="question">
+
+</textarea>
+
+<br>
+
+правилен отговор:
+
+<input type="text"  name="answer">
+
+<br>
+
+грешен отговор:
+
+<input type="text"  name="incorrect1">
+
+<br>
+грешен отговор
+
+<input type="text"  name="incorrect2">
+
+<br>
+грешен отговор
+
+<input type="text"  name="incorrect3">
+<br>
+<input type="submit">
+</form>
