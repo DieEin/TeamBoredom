@@ -30,18 +30,69 @@
         </div>
     </nav>
     <div class="container">
-        <form action="#">
-            <label for="username">Name</label>
-            <input type="text" name="username" />
-            <br />
-            <label for="class">Class</label>
-            <input type="text" name="class" />
-            <br />
-            <label for="password">Password</label>
-            <input type="password" name="password" />
-            <br />
-            <input type="submit" value="Sign Up" />
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                <div class="col-sm-4">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="class">Class:</label>
+                <div class="col-sm-4">
+                    <select class="form-control" id="class">
+                        <option>8a</option>
+                        <option>8b</option>
+                        <option>8v</option>
+                        <option>8g</option>
+                        <option>9a</option>
+                        <option>9b</option>
+                        <option>9v</option>
+                        <option>9g</option>
+                        <option>10a<option>
+                        <option>10b</option>
+                        <option>10v</option>
+                        <option>10g</option>
+                        <option>11a</option>
+                        <option>11b</option>
+                        <option>11v</option>
+                        <option>11g</option>
+                        <option>12a</option>
+                        <option>12b</option>
+                        <option>12v</option>
+                        <option>12g</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="class">Number:</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="number" placeholder="Enter number">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
         </form>
     </div>
+    <?php
+        $name = $pwd = $class = $number = "";
+        
+    ?>
 </body>
 </html>
