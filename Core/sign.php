@@ -38,7 +38,6 @@
 	$new = mysql_fetch_assoc($result);
 	var_dump($new);
 	
-	
 	$sql = mysql_query("INSERT INTO users (name, password, class, number)
 	VALUES ('$name', '$password', '$class', $number);");
 	echo mysql_error();

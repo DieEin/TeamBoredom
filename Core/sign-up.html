@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sign in</title>
+    <title>Bootstrap Case</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -19,6 +19,8 @@
             <div>
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -32,19 +34,19 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="name">Name:</label>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" id="name" name="sname" placeholder="Enter name">
+                    <input type="text" class="form-control" id="name" name="Name" placeholder="Enter name">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="pwd">Password:</label>
                 <div class="col-sm-4">
-                    <input type="password" class="form-control" id="pwd" name="spassword" placeholder="Enter password">
+                    <input type="password" class="form-control" id="password" name="Password" placeholder="Enter password">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="class">Class:</label>
                 <div class="col-sm-4">
-                    <select class="form-control" id="class">
+                    <select class="form-control" id="class" name="Class">
                         <option>8a</option>
                         <option>8b</option>
                         <option>8v</option>
@@ -71,19 +73,22 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="class">Number:</label>
                 <div class="col-sm-4">
-                    <input type="number" min="1" max="30" class="form-control" id="number" name="snum"placeholder="Enter number">
+                    <input type="number" class="form-control" id="number" name="Number" placeholder="Enter number">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" name="sbutton" class="btn btn-primary">Submit</button>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
                 </div>
             </div>
         </form>
     </div>
-    <?php
-        $name = $pwd = $class = $number = "";
-        
-    ?>
 </body>
 </html>
