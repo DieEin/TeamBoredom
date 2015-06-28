@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="styles.css">
+		<link href="styles.css" rel="stylesheet">
 	</head>
 	
 	<body>
-		<form action="questionupload.php">
+		<form action="questionupload.php" method="GET">
 			Here you can write your questons.<br>
-			<textarea rows="10" cols="50" name="question"></textarea><br>
+			<textarea rows="10" cols="50" name="question" class="txtarea" ></textarea><br>
 			правилен отговор:
 			<input type="text" class="form-control" maxlength="3" name="answer" placeholder="Corect answer" required><br>
 			грешен отговор:
